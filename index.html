@@ -9,17 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="data.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="header-text">
             <p class="title">N328 Final Project - Visualization with D3</p>
-            <p class="secondary">Marco Ramirez &nbsp|&nbsp <a href="" class="ylink">Link to Video</a></p>
+            <p class="secondary">Marco Ramirez &nbsp|&nbsp <a href="https://youtu.be/ylvESYgju1I" class="ylink">Link to Video</a></p>
         </div>
     </header>
     
-    <div id="data" class="main"></div>
+    <div id="data" class="main">
+        <h1>Comparing Gas Prices</h1>
+        <p class="container"> &emsp; &emsp;For my data visualization project, I wasn't quite sure what to do. 
+            I searched around for a few days, and couldn't find a dataset that I as truly passionate about. 
+            I continued to think at work, as I drove, and as I existed. Then, the idea struck me. As I filled
+            my car's gas tank, I started to think about two years ago, when gas was cheap. I then started to ponder
+            how cheap it was 10 years ago, and then 20. Finally, I had an idea. Using D3.js, I decidede to visualize
+            how gas prices have changed through the years, as well as comparing the prices <u> per gallon </u>of "All Grades"
+            (regular, medium, premium), as well as the prices of "Diesel". Here is the visualization.
+        </p>
+        <div id="tooltip" class="hidden">
+			<p><strong>Price and Year</strong></p>
+			<p><span id="value"></span></p>
+		</div>
+        <p></p>
+    </div>
+    <script src="data.js"></script>
 </body>
 </html>
